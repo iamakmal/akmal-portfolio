@@ -3,23 +3,26 @@ import About from './components/about'
 import Projects from './components/projects'
 import Skills from './components/skills'
 import Education from './components/education'
+import Contact from './components/contact'
 
 
 
 function App() {
   return (
     <>
-       <div
-    style={{
-     // background: 'rgb(211,211,211)',
-    }}
-  >
-    <Home/> 
-    <About/>
-    <Education/>
-    <Skills/>
-    <Projects/>
-    </div>
+      <div
+        style={{
+          // background: 'black',
+          //color: 'white'
+        }}
+      >
+        <Home />
+        <About />
+        <Education />
+        <Skills />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }
