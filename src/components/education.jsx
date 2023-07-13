@@ -17,7 +17,7 @@ function Education() {
   return (
     <>
     <section id="education">
-    <Typography variant="h1">Education</Typography>
+    <Typography variant="h2" align="center" gutterBottom>Education</Typography>
 
     <div data-aos="fade-up">
     <Card sx={{width: '100%', maxWidth: { xs: 300, sm: 400, md: 500 }, margin: '0 auto', marginBottom: '16px'}}>

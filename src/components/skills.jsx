@@ -23,13 +23,13 @@ function Skills() {
   return (
     <>
     <section id="skills">
-    <Typography variant="h1">Skills</Typography>
+    <Typography variant="h2" align="center" gutterBottom>Skills</Typography>
     <Grid container spacing={2}>
 
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={html} height="180px" alt="html"/>
+    <img src={html} height="150px" alt="html"/>
     <Typography variant="subtitle1">HTML</Typography>
     </div>
     </Grid>
@@ -37,7 +37,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={css} height="180px" alt="css"/>
+    <img src={css} height="150px" alt="css"/>
     <Typography variant="subtitle1">CSS</Typography>
     </div>
     </Grid>
@@ -45,7 +45,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={php} height="180px" alt="php"/>
+    <img src={php} height="150px" alt="php"/>
     <Typography variant="subtitle1">PHP</Typography>
     </div>
     </Grid>
@@ -53,7 +53,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={js} height="180px" alt="js"/>
+    <img src={js} height="150px" alt="js"/>
     <Typography variant="subtitle1">JS</Typography>
     </div>
     </Grid>
@@ -61,7 +61,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={c} height="180px" alt="c"/>
+    <img src={c} height="150px" alt="c"/>
     <Typography variant="subtitle1">C</Typography>
     </div>
     </Grid>
@@ -69,7 +69,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={java} height="180px" alt="java"/>
+    <img src={java} height="150px" alt="java"/>
     <Typography variant="subtitle1">Java</Typography>
     </div>
     </Grid>
@@ -77,7 +77,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={mysql} height="180px" alt="mysql"/>
+    <img src={mysql} height="150px" alt="mysql"/>
     <Typography variant="subtitle1">MySQL</Typography>
     </div>
     </Grid>
@@ -109,7 +109,7 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={figma} height="180px" alt="figma"/>
+    <img src={figma} height="150px" alt="figma"/>
     <Typography variant="subtitle1">Figma</Typography>
     </div>
     </Grid>
@@ -117,14 +117,14 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={firebase} height="180px" alt="firebase"/>
+    <img src={firebase} height="150px" alt="firebase"/>
     <Typography variant="subtitle1">Firebase</Typography>
     </div>
     </Grid>
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={postman} height="180px" alt="postman"/>
+    <img src={postman} height="150px" alt="postman"/>
     <Typography variant="subtitle1">Postman</Typography>
     </div>
     </Grid>
@@ -140,14 +140,14 @@ function Skills() {
 
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
-    <img src={wordpress} height="180px" alt="wordpress"/>
+    <img src={wordpress} height="150px" alt="wordpress"/>
     <Typography variant="subtitle1">Wordpress</Typography>
     </div>
     </Grid>
 
     <Grid item >
     <div style={{ textAlign: 'center' }}>
-    <img src={mern} height="180px" alt="mern"/>
+    <img src={mern} height="150px" alt="mern"/>
     <Typography variant="subtitle1">Mern</Typography>
     </div>
     </Grid>

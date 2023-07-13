@@ -21,7 +21,7 @@ function About() {
       paddingLeft: '20px'
     }}
     >
-    <Typography variant="h1">About Me</Typography>
+    <Typography variant="h2" align="center" gutterBottom>About Me</Typography>
     <Grid 
       container
       spacing={2}
@@ -30,6 +30,7 @@ function About() {
       <img src={profilePic}    style={{
           borderRadius: '60%',
           width: '50%',
+          marginLeft:'20px'
         }}/>
       </Grid>  
       <Grid item xs={12} sm={6}>

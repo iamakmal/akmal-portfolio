@@ -16,7 +16,7 @@ function Projects() {
   return (
     <>
     <section id="projects">
-    <Typography variant="h1">Projects</Typography>
+    <Typography variant="h2" align="center" gutterBottom>Projects</Typography>
 
     <Grid 
       container
