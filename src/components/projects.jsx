@@ -12,7 +12,7 @@ import resource from '../assets/resource.png'
 import landsale from '../assets/landsale.jpg'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function projects() {
+function Projects() {
   return (
     <>
     <section id="projects">
@@ -64,7 +64,7 @@ function projects() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Human Resource Management System - Resource Management
+          HRMS - Resource Management
         </Typography>
         <Typography variant="body1" color="text.secondary">
         This group project was for the ITP module in the 2nd Year 2nd Semester. I
@@ -148,4 +148,4 @@ function projects() {
   )
 }
 
-export default projects
+export default Projects

@@ -11,8 +11,7 @@ function App() {
     <>
        <div
     style={{
-      background: 'rgb(255,42,132)',
-      background: 'linear-gradient(0deg, rgba(255,42,132,1) 0%, rgba(253,187,45,1) 100%)'
+     // background: 'rgb(211,211,211)',
     }}
   >
     <Home/> 

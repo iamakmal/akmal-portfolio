@@ -7,7 +7,7 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
-function home() {
+function Home() {
   return (
  
     <Box
@@ -51,4 +51,4 @@ function home() {
   )
 }
 
-export default home
+export default Home
