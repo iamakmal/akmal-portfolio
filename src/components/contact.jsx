@@ -38,7 +38,9 @@ function Contact() {
 
     return (
         <>
+        <section id="contact">
             <Typography variant="h2" align="center" gutterBottom>Contact Me</Typography>
+            <Typography variant="h6" color="text.secondary" align="center">For any project inquiries</Typography>
             <Grid
                 container
                 spacing={2}
@@ -67,6 +69,7 @@ function Contact() {
                     <img src={contact} style={{maxWidth: '100%', height: 'auto'}}/>
                 </Grid>
             </Grid>
+            </section>
         </>
     )
 }

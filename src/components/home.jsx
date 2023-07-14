@@ -15,6 +15,7 @@ function Home() {
       display: 'flex',
       flexDirection: 'column',
       height: '100vh',
+      //backgroundImage: {backgroundImg},
       alignItems: 'center',
       justifyContent: 'center', 
     }}

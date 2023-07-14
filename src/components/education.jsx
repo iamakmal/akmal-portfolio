@@ -92,6 +92,8 @@ function Education() {
       </CardContent>
     </Card>
     </div>
+    <br/>
+    <br/>
     </section>
     </>
   )

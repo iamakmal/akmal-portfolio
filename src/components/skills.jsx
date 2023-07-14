@@ -153,6 +153,8 @@ function Skills() {
     </Grid>
 
     </Grid>
+    <br/>
+    <br/>
     </section>
     </>
   )
