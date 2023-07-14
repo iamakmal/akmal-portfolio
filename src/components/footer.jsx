@@ -12,11 +12,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 function Footer() {
   return (
     <>
-    <hr/>
+    
       <Box
         component="footer"
         sx={{
-          backgroundColor: 'white',
+          backgroundColor: 'rgb(244,244,244)',
+          //color: 'white',
           p: 6,
         }}
       >
@@ -26,7 +27,7 @@ function Footer() {
               <Typography variant="h6" color="text.primary" gutterBottom>
                 About Me
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body1" color="text.secondary">
                 I am an IT undergraduate. I develop web and mobile applications.
               </Typography>
             </Grid>
@@ -34,10 +35,10 @@ function Footer() {
               <Typography variant="h6" color="text.primary" gutterBottom>
                 Contact Me
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body1" color="text.secondary">
                 Email: m.akmalalavi@gmail.com
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body1" color="text.secondary">
                 Phone: +94 76 113 6787
               </Typography>
             </Grid>
@@ -52,7 +53,7 @@ function Footer() {
             </Grid>
           </Grid>
           <Box mt={5}>
-            <Typography variant="body2" color="text.secondary" align="center">
+            <Typography variant="body1" color="text.secondary" align="center">
               {"Copyright © "}
               Akmal Alavi
               {" "}

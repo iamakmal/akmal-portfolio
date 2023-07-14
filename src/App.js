@@ -6,6 +6,7 @@ import Education from './components/education'
 import Contact from './components/contact'
 import Nav from './components/nav'
 import Footer from './components/footer'
+//import backgroundImg from './assets/background.jpg'
 
 
 
@@ -14,19 +15,24 @@ function App() {
     <>
       <div
         style={{
-          // background: 'black',
-          //color: 'white'
+         // background: 'black',
+          //color: 'white',
+         // background: 'rgb(131,58,180)',
+          //background: 'linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%)',
+          //backgroundImage: `url("${backgroundImg}")`,
+          //backgroundSize: 'cover',
+          //backgroundPosition: 'center',
         }}
       >
-        <Nav/>
+        <Nav />
         <Home />
         <About />
         <Education />
         <Skills />
         <Projects />
         <Contact />
-        <Footer/>
-      </div>
+        <Footer />
+        </div>
     </>
   );
 }

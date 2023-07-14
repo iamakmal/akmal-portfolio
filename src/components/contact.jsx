@@ -40,7 +40,6 @@ function Contact() {
         <>
         <section id="contact">
             <Typography variant="h2" align="center" gutterBottom>Contact Me</Typography>
-            <Typography variant="h6" color="text.secondary" align="center">For any project inquiries</Typography>
             <Grid
                 container
                 spacing={2}
@@ -51,17 +50,17 @@ function Contact() {
                             display: 'flex',
                             flexDirection: 'column',
                            // width: '50%',
-                           //background: 'white',
+                            background: 'inherit',
                             justifyContent: 'center',
                             padding: '20px',
                         }}
                     >
                         <form onSubmit={submit}>
-                            <TextField type="text" sx={{ mb: 3 }} value={name} onChange={(e) => setName(e.target.value)} label="Name" fullWidth color='primary' variant='outlined' placeholder="Enter your Name" />
-                            <TextField type="email" sx={{ mb: 3 }} value={email} onChange={(e) => setEmail(e.target.value)} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
-                            <TextField type="text" sx={{ mb: 3 }} value={subject} onChange={(e) => setSubject(e.target.value)} label="Subject" color='primary' fullWidth variant='outlined' placeholder="Enter the Subject" />
-                            <TextField label="Message" sx={{ mb: 3 }} value={message} onChange={(e) => setMessage(e.target.value)} multiline rows={4} fullWidth placeholder="Enter the Message" />
-                            <Button size="large" variant="outlined" type='submit'>Submit</Button>
+                            <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={name} onChange={(e) => setName(e.target.value)} label="Name" fullWidth color='primary' variant='outlined' placeholder="Enter your Name" />
+                            <TextField type="email" sx={{ mb: 3, backgroundColor: '#ffff' }} value={email} onChange={(e) => setEmail(e.target.value)} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
+                            <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={subject} onChange={(e) => setSubject(e.target.value)} label="Subject" color='primary' fullWidth variant='outlined' placeholder="Enter the Subject" />
+                            <TextField label="Message" sx={{ mb: 3, backgroundColor: '#ffff' }} value={message} onChange={(e) => setMessage(e.target.value)} multiline rows={4} fullWidth placeholder="Enter the Message" />
+                            <Button size="large" variant="outlined" type='submit' sx={{backgroundColor: '#ffff'}}>Submit</Button>
                         </form>
                     </Box>
                 </Grid>
@@ -69,6 +68,8 @@ function Contact() {
                     <img src={contact} style={{maxWidth: '100%', height: 'auto'}}/>
                 </Grid>
             </Grid>
+            <br/>
+            <br/>
             </section>
         </>
     )

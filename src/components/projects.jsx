@@ -10,6 +10,7 @@ import bank from '../assets/bank.png'
 import exam from '../assets/exam.png'
 import resource from '../assets/resource.png'
 import landsale from '../assets/landsale.jpg'
+import portfolio from '../assets/portfolio.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Projects() {
@@ -138,6 +139,33 @@ function Projects() {
       </CardContent>
       <CardActions>
       <a href="https://github.com/ravii-sa/landsale" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
+      </CardActions>
+    </Card>
+    </Grid>
+
+    <Grid item xs={12} sm={6}>
+    <Card sx={{ maxWidth: 800, borderRadius: '3%', margin: '20px', padding: '10px' }}>
+      <CardMedia
+         sx={{
+          height: { xs: 300, sm: 400 },
+          borderRadius: '3%',
+        }}
+        image={portfolio}
+        title="Portfolio Website"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Personal Portfolio Website
+        </Typography>
+        <Typography variant="body1" color="text.secondary">
+        This is my personal portfolio website. As a developer it is quite mandatory to have a portfolio website, inorder to provide information about yourself and to showcase your best projects with your relevant skills and experience. Keeping this in mind, I created this using only client side technologies. Another main aspect I considered here is the mobile responsiveness, which is also quite mandatory since most of the users access internet through smartphones. The contact me form is connected with Email JS, so once someone submits the form, it will be delivered to my personal email.
+        <br/>
+        <i><b>#React JS #Material UI #Bootstrap</b></i>
+        </Typography>
+      </CardContent>
+      <CardActions>
+      <a href="https://github.com/IT21292422/WalletApp-PilotSquad" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
+      <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7062784147399835648?compact=1" target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
       </CardActions>
     </Card>
     </Grid>
