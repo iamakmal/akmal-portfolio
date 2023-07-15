@@ -165,7 +165,7 @@ function Projects() {
       </CardContent>
       <CardActions>
       <a href="https://github.com/iamakmal/portfolio" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
-      <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7062784147399835648?compact=1" target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
+      <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7086013694580568064?compact=1" target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
       </CardActions>
     </Card>
     </Grid>
