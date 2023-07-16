@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Typography from '@mui/material/Typography'
 import { Grid } from '@mui/material'
 import TextField from '@mui/material/TextField'
@@ -13,6 +13,26 @@ function Contact() {
     const [email, setEmail] = useState('')
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
+    const [submitBtnDisabled, setSubmitBtnDisabled] = useState(true)
+    const [emailError, setEmailError] = useState(false)
+
+    const validateEmail = (email) => {
+        // Regular expression to validate email format
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailPattern.test(email);
+    };
+
+    const handleEmailChange = (e) => {
+        const { value } = e.target;
+        setEmail(value);
+        setEmailError(!validateEmail(value)); // Set emailError based on email validity
+    };
+
+    useEffect(() => {
+        // Check if all the fields are filled and email is valid and then set the disabled state of the submit button accordingly
+        const isFormValid = name !== '' && email !== '' && subject !== '' && message !== '' && !emailError;
+        setSubmitBtnDisabled(!isFormValid);
+    }, [name, email, subject, message]);
 
     const submit = (e) => {
         e.preventDefault()
@@ -57,10 +77,10 @@ function Contact() {
                     >
                         <form onSubmit={submit}>
                             <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={name} onChange={(e) => setName(e.target.value)} label="Name" fullWidth color='primary' variant='outlined' placeholder="Enter your Name" />
-                            <TextField type="email" sx={{ mb: 3, backgroundColor: '#ffff' }} value={email} onChange={(e) => setEmail(e.target.value)} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
+                            <TextField type="email" sx={{ mb: 3, backgroundColor: '#ffff' }} value={email} onChange={handleEmailChange} error={emailError} helperText={emailError ? 'Invalid email format' : ''} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
                             <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={subject} onChange={(e) => setSubject(e.target.value)} label="Subject" color='primary' fullWidth variant='outlined' placeholder="Enter the Subject" />
                             <TextField label="Message" sx={{ mb: 3, backgroundColor: '#ffff' }} value={message} onChange={(e) => setMessage(e.target.value)} multiline rows={4} fullWidth placeholder="Enter the Message" />
-                            <Button size="large" variant="outlined" type='submit' sx={{backgroundColor: '#ffff'}}>Submit</Button>
+                            <Button size="large" variant="outlined" type='submit' disabled={submitBtnDisabled} sx={{backgroundColor: '#ffff'}}>Submit</Button>
                         </form>
                     </Box>
                 </Grid>
