@@ -47,7 +47,7 @@ function Projects() {
         </Typography>
       </CardContent>
       <CardActions>
-      <a href="https://github.com/Arudchayan/Online-Examination-Management-System" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
+      <a href="https://github.com/iamakmal/ExamSystem" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
       <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7004138072615354370?compact=1" target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
       </CardActions>
     </Card>
@@ -79,7 +79,7 @@ function Projects() {
         </Typography>
       </CardContent>
       <CardActions>
-      <a href="https://github.com/SLIITITP/y2_s2_wd_it_01-itp_wd_metro_01" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
+      <a href="https://github.com/IT21292422/HRMS-Resource-System" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
       <a href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7062811311100891137?compact=1" target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
       </CardActions>
     </Card>
@@ -138,7 +138,7 @@ function Projects() {
         </Typography>
       </CardContent>
       <CardActions>
-      <a href="https://github.com/ravii-sa/landsale" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
+      <a href="https://github.com/IT21292422/Landsale" target="_blank" rel="noopener noreferrer" style={{marginRight: '20px'}}><GitHubIcon style={{ fontSize: 40, color: 'black'}}/></a>
       </CardActions>
     </Card>
     </Grid>
