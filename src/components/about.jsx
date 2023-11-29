@@ -29,6 +29,7 @@ function About() {
       >
       <Grid item xs={12} sm={6}>
       <img src={profilePic}    style={{
+          borderColor:'black',
           borderRadius: '60%',
           width: '50%',
           marginLeft:'20px'
@@ -36,7 +37,7 @@ function About() {
       </Grid>  
       <Grid item xs={12} sm={6}>
         <Typography variant="body1" sx={{ fontSize: '24px' }}>
-        Hello there, my name is Akmal Alavi. A dedicated, hardworking and an enthusiastic individual, looking forward to work in the IT industry. Seeking an internship on Software Development in a well reputed company to utilize my skills and to gain some real world experience in a challenging and motivating working environment. Currently I am a 3rd Year undergraduate at SLIIT, following BSc in Information Technology (Specializing in Software Engineering) degree program. Curiosity to learn new things is what keeps me motivated. I believe that I will be a valuable asset to the company that I will be working for.</Typography>
+        Hello there, my name is Akmal Alavi. A dedicated, hardworking and an enthusiastic individual, looking forward to work in the IT industry. Seeking an internship on Full Stack Software Development in a well reputed company to utilize my skills and to gain some real-world experience in a challenging and motivating working environment. Currently I am a 3rd Year undergraduate at SLIIT, following BSc in Information Technology (Specializing in Software Engineering) degree program. I have had some hands-on experience in developing web apps and mobile apps. Apart from that I am also quite good at designing.</Typography>
         <a href={CV} download><Button variant="contained" size="large" sx={{margin:'50px', padding: '20px', fontSize: '20px'}}>Download CV  &nbsp;<DownloadIcon/></Button></a>
       </Grid>
       </Grid>

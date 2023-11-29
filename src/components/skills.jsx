@@ -5,6 +5,7 @@ import bootstrap from '../assets/tools/bootstrap.png'
 import c from '../assets/tools/c.png'
 import css from '../assets/tools/css.png'
 import figma from '../assets/tools/figma.png'
+import canva from '../assets/tools/canva.png'
 import firebase from '../assets/tools/firebase.png'
 import github from '../assets/tools/github.png'
 import html from '../assets/tools/html.png'
@@ -17,6 +18,9 @@ import php from '../assets/tools/php.png'
 import postman from '../assets/tools/postman.png'
 import vscode from '../assets/tools/vscode.png'
 import wordpress from '../assets/tools/wordpress.png'
+import react from '../assets/tools/react.png'
+import typescript from '../assets/tools/typescript.jpg'
+import next from '../assets/tools/next.png'
 
 
 function Skills() {
@@ -115,6 +119,14 @@ function Skills() {
     </Grid>
 
 
+    <Grid item xs={5} sm={2} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={canva} height="150px" alt="canva"/>
+    <Typography variant="subtitle1">Canva</Typography>
+    </div>
+    </Grid>
+
+
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
     <img src={firebase} height="150px" alt="firebase"/>
@@ -145,7 +157,32 @@ function Skills() {
     </div>
     </Grid>
 
-    <Grid item >
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={react} height="150px" alt="react"/>
+    <Typography variant="subtitle1">React / React-Native</Typography>
+    </div>
+    </Grid>
+
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={typescript} height="150px" alt="typescript"/>
+    <Typography variant="subtitle1">TypeScript</Typography>
+    </div>
+    </Grid>
+
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={next} height="150px" alt="next"/>
+    <Typography variant="subtitle1">Next.JS</Typography>
+    </div>
+    </Grid>
+
+
+    <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
     <img src={mern} height="150px" alt="mern"/>
     <Typography variant="subtitle1">Mern</Typography>

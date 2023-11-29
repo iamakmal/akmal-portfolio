@@ -11,6 +11,9 @@ import exam from '../assets/exam.png'
 import resource from '../assets/resource.png'
 import landsale from '../assets/landsale.jpg'
 import portfolio from '../assets/portfolio.png'
+import discussion from '../assets/discussion.png'
+import freshconnect from '../assets/freshconnect.png'
+import procurement from '../assets/procurement.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
 
 function Projects() {
@@ -38,10 +41,37 @@ function Projects() {
       imgSrc: bank,
       imgTitle: "Bank Management",
       heading: "E-Wallet - Bank Management",
-      body: "This group project was for the MAD module in the 2nd Year 2nd Semester. I developed the Bank Management component. Here the user can have multiple bank accounts and manage the respective transactions of each bank account separately. It is also equipped with a search function so that a particular transaction could be searched easily.",
-      tools: "#Android Studio #Kotlin #Firebase Database",
+      body: "This group project was for the Mobile Application Development module in the 2nd Year 2nd Semester. I developed the Bank Management component. Here the user can have multiple bank accounts and manage the respective transactions of each bank account separately. It is also equipped with a search function so that a particular transaction could be searched easily.",
+      tools: "#Android Studio #Kotlin #Firebase",
       github: "https://github.com/IT21292422/WalletApp-PilotSquad",
       linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7062784147399835648?compact=1"
+    },
+    {
+      imgSrc: discussion,
+      imgTitle: "Discussion Forum",
+      heading: "CodeMe - Discussion Forum",
+      body: "Developed the Discussion Forum in our web application CodeMe (a programming environment for novice programmers) for our Software Project Management Module in the 3rd Year 1st Semester. We used TypeScript and NextJS with Firebase as backend, along with this we used Daisy Ui for styling. In this Discussion Forum any user with a user account can chat in the forum. This was mainly developed as a tool for novice programmers to ask their queries related to programming and anyone who is an expert in that can answer the query. Apart from that user can update any of his messages and also delete any of his previous messages.",
+      tools: "#TypeScript #NextJS #Firebase",
+      github: "https://github.com/IT21292422/Code-Me",
+      linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7133748073494708226?compact=1"
+    },
+    {
+      imgSrc: procurement,
+      imgTitle: "Procurement System",
+      heading: "Procurement System",
+      body: "Developed a simple React Native project for the Case Studies in Software Engineering Module in 3rd Year 1st Semester. This is the manager dashboard in the procurement system of a construction company. Here the manager can approve or decline any order initiated by the site-manager, along with that he can view the status of other orders as well. The manager also can view all the policies, create any new policy, update any existing policy or delete any policy. Used Firebase as backend while used React-Native-Paper for styling.",
+      tools: "#React Native #Expo #Firebase",
+      github: "https://github.com/IT21292422/Procurement-System",
+      linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7134555549538385920?compact=1"
+    },
+    {
+      imgSrc: freshconnect,
+      imgTitle: "Fresh Connect",
+      heading: "Fresh Connect",
+      body: "Developed the Fresh Connect mobile app (To connect customers with nearby local farmers) for User Experience Engineering Module in 3rd Year 1st Semester. I mainly focused on developing the customer home page where the customer can view all his saved shops, the shop page where the customer can view all the products in the shop and also the product page where the customer can view additional details about the product and also contact the farmer from there. In addition to this I developed the chat feature so the customer can directly communicate with the farmer. We developed this mobile app using React Native and used Firebase as backend. Used React-Native-Magnus for styling",
+      tools: "#React Native #Expo #Firebase",
+      github: "https://github.com/IT21292422/Fresh-Connect",
+      linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7135228489602932736?compact=1"
     },
     {
       imgSrc: landsale,
