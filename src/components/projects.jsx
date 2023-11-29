@@ -122,6 +122,7 @@ function Projects() {
                 height: { xs: 300, sm: 400 },
                 borderRadius: '3%',
               }}
+              component="img"
               image={project.imgSrc}
               title={project.imgTitle}
             />

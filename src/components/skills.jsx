@@ -185,7 +185,7 @@ function Skills() {
     <Grid item xs={6} sm={3} md={2}>
     <div style={{ textAlign: 'center' }}>
     <img src={mern} height="150px" alt="mern"/>
-    <Typography variant="subtitle1">Mern</Typography>
+    <Typography variant="subtitle1">MERN</Typography>
     </div>
     </Grid>
 
