@@ -23,7 +23,7 @@ function Home() {
     }}
     >
     
-    <Typography variant="h6"align="center">Hi There 👋,</Typography>
+    <Typography variant="h6"align="center">Hello There 👋,</Typography>
     <Typography variant="h1" align="center">I am Akmal</Typography>
     <Typography variant="h3" align="center">
     <Typewriter
