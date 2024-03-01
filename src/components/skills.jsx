@@ -21,6 +21,10 @@ import wordpress from '../assets/tools/wordpress.png'
 import react from '../assets/tools/react.png'
 import typescript from '../assets/tools/typescript.jpg'
 import next from '../assets/tools/next.png'
+import csharp from '../assets/tools/csharp.png'
+import python from '../assets/tools/python.png'
+import springboot from '../assets/tools/springboot.png'
+import dotnet from '../assets/tools/dotnet.png'
 
 
 function Skills() {
@@ -186,6 +190,34 @@ function Skills() {
     <div style={{ textAlign: 'center' }}>
     <img src={mern} height="150px" alt="mern"/>
     <Typography variant="subtitle1">MERN</Typography>
+    </div>
+    </Grid>
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={csharp} height="150px" alt="csharp"/>
+    <Typography variant="subtitle1">C#</Typography>
+    </div>
+    </Grid>
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={python} height="150px" alt="python"/>
+    <Typography variant="subtitle1">Python</Typography>
+    </div>
+    </Grid>
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={springboot} height="150px" alt="springboot"/>
+    <Typography variant="subtitle1">Spring Boot</Typography>
+    </div>
+    </Grid>
+
+    <Grid item xs={6} sm={3} md={2}>
+    <div style={{ textAlign: 'center' }}>
+    <img src={dotnet} height="150px" alt="dotnet"/>
+    <Typography variant="subtitle1">ASP.NET</Typography>
     </div>
     </Grid>
 
