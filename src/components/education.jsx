@@ -26,7 +26,7 @@ function Education() {
         BSc in Information Technology (Specializing in Software Engineering) | SLIIT
         </Typography>
         <Typography variant="body2"  color="text.secondary" sx={{ fontSize: '18px' }}>
-        2021 – 2025 (READING) | CGPA 3.61
+        2021 – 2025 (READING) | CGPA 3.4
         </Typography>
       </CardContent>
     </Card>

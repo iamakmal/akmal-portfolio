@@ -7,9 +7,12 @@ import { Button } from '@mui/material'
 import Typography from '@mui/material/Typography'
 import {Box} from '@mui/material'
 import { Grid } from '@mui/material'
+import spacego from '../assets/spacego.png'
+import course from '../assets/course.png'
 import bank from '../assets/bank.png'
 import exam from '../assets/exam.png'
 import resource from '../assets/resource.png'
+import spring from '../assets/spring.png'
 import landsale from '../assets/landsale.jpg'
 import portfolio from '../assets/portfolio.png'
 import discussion from '../assets/discussion.png'
@@ -24,6 +27,36 @@ function Projects() {
   const [selectedType, setSelectedType] = useState("all")
 
   const projects = [
+    {
+      imgSrc: spacego,
+      imgTitle: "space go",
+      heading: "Space Go - Space Themed Website",
+      type: "web",
+      body: "Developed a space themed website using React, utilizing NASA Open API for our Application Framework Module. Used APIs such as Astronomy Picture of The Day (APOD), EPIC and Mars Rover. Used Kinde for Authentication. Used Daisy UI and Tailwind for styling. Was able to deploy this in Vercel.",
+      tools: "#React #Daisy UI(Tailwind) #API",
+      github: "https://github.com/IT21292422/SpaceGo",
+      linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7206149026994429954?compact=1"
+    },
+    {
+      imgSrc: course,
+      imgTitle: "course",
+      heading: "Learner Management - Course Management System",
+      type: "web",
+      body: "Developed the Learner Service in the Course Management System we developed for our Distribution System Module. Developed the backend using NestJS with MongoDB as the database, by following the microservice architecture (Course Service, Learner Service, Auth Service, Payment Service). Frontend was developed using Next.js and used Cloudinary to handle media (Images, Videos, PDFs). Used Daisy UI and Tailwind for styling. The learner can view all the courses available in the system, he can enroll on any course he prefers by making the required payment and then he will be redirected to the course page where he can view the course content and also look at the progress of the course.",
+      tools: "#Nest JS #Next JS #MongoDB #Microservices #Daisy UI(Tailwind)",
+      github: "https://github.com/IT21292422/forge",
+      linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7206195782037721088?compact=1"
+    },
+    {
+      imgSrc: spring,
+      imgTitle: "spring boot",
+      heading: "Timetable Management",
+      type: "web",
+      body: "The University Timetable Management System is a RESTful API built with Spring Boot, designed to manage class schedules for students, faculty, and administrative staff. It provides functionalities for course management, booking rooms and resources, class session scheduling and user roles management. Spring Security is used to authenticate and authorize users based on roles such as Admin, Faculty, and Student, with user session management handled using JWT tokens.",
+      tools: "#Java #Spring Boot #Spring Security #Mongo DB #REST API",
+      github: "https://github.com/IT21292422/timetable-management",
+      linkedin: ""
+    },
     {
       imgSrc: exam,
       imgTitle: "exam system",
@@ -92,6 +125,7 @@ function Projects() {
       body: "This group project was for the IWT module in the 1st Year 2nd Semester. I developed the submit request form, edit request form and My Posts section where the user can see all the posts, he has posted which includes both the request posts and sale posts.",
       tools: "#HTML #CSS #PHP #MySQL",
       github: "https://github.com/IT21292422/Landsale",
+      linkedin:""
     },
     {
       imgSrc: portfolio,
@@ -119,8 +153,9 @@ function Projects() {
           <Card sx={{ maxWidth: 800, borderRadius: '3%', margin: '20px', padding: '10px' }}>
             <CardMedia
               sx={{
-                height: { xs: 300, sm: 400 },
+                
                 borderRadius: '3%',
+                objectFit:'contain'
               }}
               component="img"
               image={project.imgSrc}
@@ -136,7 +171,9 @@ function Projects() {
             </CardContent>
             <CardActions>
               <a href={project.github} target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}><GitHubIcon style={{ fontSize: 40, color: 'black' }} /></a>
-              <a href={project.linkedin} target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a>
+              {
+                project.linkedin !== "" ? <a href={project.linkedin} target="_blank" rel="noopener noreferrer"><Button size="large">Demo</Button></a> : ""
+              }
             </CardActions>
           </Card>
         </Grid>
