@@ -11,7 +11,6 @@ function About() {
   
   return (
     <section id="about">
-    
     <Box
     sx={{
       display: 'flex',
@@ -28,9 +27,11 @@ function About() {
       spacing={2}
       >
       <Grid item xs={12} sm={6}>
-      <img src={profilePic}    style={{
+      <img src={profilePic}  alt="profile-pic"  style={{
           borderColor:'black',
           borderRadius: '60%',
+          display: 'block',
+          margin: 'auto',
           width: '50%',
           marginLeft:'20px'
         }}/>

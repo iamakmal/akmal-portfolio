@@ -3,10 +3,14 @@ import Typography from '@mui/material/Typography'
 import { Grid } from '@mui/material'
 import TextField from '@mui/material/TextField'
 import { Button } from '@mui/material'
-import { FormLabel } from '@mui/material'
 import { Box } from '@mui/material'
-import emailjs, { init } from "@emailjs/browser"
+import { useTheme } from '@mui/material/styles';
+import { useMediaQuery } from '@mui/material';
+import emailjs from "@emailjs/browser"
 import contact from "../assets/contact.jpg"
+import banner from '../assets/banner.png'
+import { alignProperty } from '@mui/material/styles/cssUtils'
+import { display, margin } from '@mui/system'
 
 function Contact() {
     const [name, setName] = useState('')
@@ -15,6 +19,26 @@ function Contact() {
     const [message, setMessage] = useState('')
     const [submitBtnDisabled, setSubmitBtnDisabled] = useState(true)
     const [emailError, setEmailError] = useState(false)
+
+    const theme = useTheme();
+const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
+
+    const contactStyles = {
+        image: { 
+            maxWidth: '100%', 
+            display: 'block',
+            margin: 'auto',
+            height: isSmallScreen? 200: 'auto' 
+        }
+    }
+
+    const bannerStyles = {
+      image: {
+        width: '100%',
+        padding: isSmallScreen ? 0 : 100,
+        height: '50%'
+      }
+    };
 
     const validateEmail = (email) => {
         // Regular expression to validate email format
@@ -32,7 +56,7 @@ function Contact() {
         // Check if all the fields are filled and email is valid and then set the disabled state of the submit button accordingly
         const isFormValid = name !== '' && email !== '' && subject !== '' && message !== '' && !emailError;
         setSubmitBtnDisabled(!isFormValid);
-    }, [name, email, subject, message]);
+    }, [name, email, subject, message, emailError]);
 
     const submit = (e) => {
         e.preventDefault()
@@ -58,38 +82,39 @@ function Contact() {
 
     return (
         <>
-        <section id="contact">
-            <Typography variant="h2" align="center" gutterBottom>Contact Me</Typography>
-            <Grid
-                container
-                spacing={2}
-            >
-                <Grid item xs={12} sm={6}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            flexDirection: 'column',
-                           // width: '50%',
-                            background: 'inherit',
-                            justifyContent: 'center',
-                            padding: '20px',
-                        }}
-                    >
-                        <form onSubmit={submit}>
-                            <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={name} onChange={(e) => setName(e.target.value)} label="Name" fullWidth color='primary' variant='outlined' placeholder="Enter your Name" />
-                            <TextField type="email" sx={{ mb: 3, backgroundColor: '#ffff' }} value={email} onChange={handleEmailChange} error={emailError} helperText={emailError ? 'Invalid email format' : ''} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
-                            <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={subject} onChange={(e) => setSubject(e.target.value)} label="Subject" color='primary' fullWidth variant='outlined' placeholder="Enter the Subject" />
-                            <TextField label="Message" sx={{ mb: 3, backgroundColor: '#ffff' }} value={message} onChange={(e) => setMessage(e.target.value)} multiline rows={4} fullWidth placeholder="Enter the Message" />
-                            <Button size="large" variant="outlined" type='submit' disabled={submitBtnDisabled} sx={{backgroundColor: '#ffff'}}>Submit</Button>
-                        </form>
-                    </Box>
+            <section id="contact">
+                <Typography variant="h2" align="center" gutterBottom>Contact Me</Typography>
+                <Grid
+                    container
+                    spacing={2}
+                >
+                    <Grid item xs={12} sm={6}>
+                        <Box
+                            sx={{
+                                display: 'flex',
+                                flexDirection: 'column',
+                                // width: '50%',
+                                background: 'inherit',
+                                justifyContent: 'center',
+                                padding: '20px',
+                            }}
+                        >
+                            <form onSubmit={submit}>
+                                <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={name} onChange={(e) => setName(e.target.value)} label="Name" fullWidth color='primary' variant='outlined' placeholder="Enter your Name" />
+                                <TextField type="email" sx={{ mb: 3, backgroundColor: '#ffff' }} value={email} onChange={handleEmailChange} error={emailError} helperText={emailError ? 'Invalid email format' : ''} label="E-mail" color='primary' fullWidth variant='outlined' placeholder="Enter the E-Mail" />
+                                <TextField type="text" sx={{ mb: 3, backgroundColor: '#ffff' }} value={subject} onChange={(e) => setSubject(e.target.value)} label="Subject" color='primary' fullWidth variant='outlined' placeholder="Enter the Subject" />
+                                <TextField label="Message" sx={{ mb: 3, backgroundColor: '#ffff' }} value={message} onChange={(e) => setMessage(e.target.value)} multiline rows={4} fullWidth placeholder="Enter the Message" />
+                                <Button size="large" variant="outlined" type='submit' disabled={submitBtnDisabled} sx={{ backgroundColor: '#ffff' }}>Submit</Button>
+                            </form>
+                        </Box>
+                    </Grid>
+                    <Grid item xs={12} sm={6}>
+                        <img src={contact} alt="contact" style={contactStyles.image} />
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} sm={6}>
-                    <img src={contact} style={{maxWidth: '100%', height: 'auto'}}/>
-                </Grid>
-            </Grid>
-            <br/>
-            <br/>
+                <br />
+                <br />
+                <img src={banner} alt="profile-pic" style={bannerStyles.image}/>
             </section>
         </>
     )

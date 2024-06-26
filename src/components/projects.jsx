@@ -147,9 +147,9 @@ function Projects() {
         return project.type === selectedType;
       }
     })
-    .map((project) => {
+    .map((project,index) => {
       return (
-        <Grid item xs={12} sm={6}>
+        <Grid key={index} item xs={12} sm={6}>
           <Card sx={{ maxWidth: 800, borderRadius: '3%', margin: '20px', padding: '10px' }}>
             <CardMedia
               sx={{
