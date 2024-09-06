@@ -31,6 +31,7 @@ function Home() {
         strings: [
           "Undergraduate",
           "Full Stack Web Developer",
+          "Mobile Developer",
         ],
         autoStart: true,
         loop: true,
