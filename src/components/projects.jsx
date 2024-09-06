@@ -73,7 +73,7 @@ function Projects() {
       heading: "CodeMe - Discussion Forum",
       type: "web",
       body: "Developed the Discussion Forum in our web application CodeMe (a programming environment for novice programmers) for our Software Project Management Module in the 3rd Year 1st Semester. We used TypeScript and NextJS with Firebase as backend, along with this we used Daisy Ui for styling. In this Discussion Forum any user with a user account can chat in the forum. This was mainly developed as a tool for novice programmers to ask their queries related to programming and anyone who is an expert in that can answer the query. Apart from that user can update any of his messages and also delete any of his previous messages.",
-      tools: "#TypeScript #NextJS #Firebase",
+      tools: "#TypeScript #NextJS #Firebase #Daisy UI(Tailwind)",
       github: "https://github.com/IT21292422/Code-Me",
       linkedin: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7133748073494708226?compact=1"
     },
